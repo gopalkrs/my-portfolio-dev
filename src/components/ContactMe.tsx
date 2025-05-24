@@ -1,11 +1,6 @@
 import { Mail } from "lucide-react";
 import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
-type socialLinksTypes = {
-    name: string;
-    url: string;
-    icon: string;
-}
 const ContactMe = () => {
 
     const socialLinks  = [

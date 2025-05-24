@@ -1,4 +1,4 @@
-import { LocateIcon, LocationEdit, Mail, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 
 const AboutMe = () => {
   return (
