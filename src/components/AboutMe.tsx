@@ -6,7 +6,7 @@ const AboutMe = () => {
     <section className="container">
       <div className='flex shadow-lg flex-col sm:flex-row items-center text-center justify-center gap-5 md:gap-20 p-8 bg-white rounded-lg w-[80%] md:max-w-3xl mx-auto mt-10'>
         <div className="rounded-full bg-gray-200 my-4">
-          <img className="rounded-full" width={100} height={100} src="/public/portfolio.jpg" alt="profile-pic" />
+          <img className="rounded-full" width={100} height={100} src="/portfolio.jpg" alt="profile-pic" />
         </div>
         <div className="flex flex-col items-start">
           <h1 className="font-bold text-md sm:text-xl">Gopal Choudhary</h1>
