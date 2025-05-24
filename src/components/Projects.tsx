@@ -52,7 +52,7 @@ const Projects = () => {
                                 Website
                             </a>
                         </div>
-                        <div className="mt-2 flex items-center overflow-hidden flex-row gap-2">{project.techstack.map((tech, index) => (
+                        <div className="mt-2 flex items-center flex-wrap flex-row gap-2">{project.techstack.map((tech, index) => (
                             <p className="bg-red-300 text-xs text-white px-2 py-1 rounded-xl" key={index}>{tech}</p>
                         ))}
                         </div>
