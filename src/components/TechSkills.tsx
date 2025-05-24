@@ -1,9 +1,8 @@
-import { GitBranch } from "lucide-react"
 import { CgVercel } from "react-icons/cg"
-import { DiJava, DiJavascript, DiMongodb, DiPostgresql, DiRedis } from "react-icons/di"
-import { FaReact } from "react-icons/fa6"
+import { DiGitBranch, DiJava, DiJavascript, DiMongodb, DiPostgresql, DiRedis } from "react-icons/di"
+import { FaCloudflare, FaReact } from "react-icons/fa6"
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri"
-import { SiExpress, SiMysql, SiPrisma, SiTypescript } from "react-icons/si"
+import { SiExpress, SiMysql, SiPostman, SiPrisma, SiTypescript } from "react-icons/si"
 
 const TechSkills = () => {
 
@@ -19,8 +18,10 @@ const TechSkills = () => {
     { name: 'Prisma', icon: <SiPrisma />, color: 'text-purple-600' },
     { name: 'Vercel', icon: <CgVercel />, color: 'text-black' },
     { name: 'Redis', icon: <DiRedis />, color: 'text-red-600' },
-    { name: 'Git', icon: <GitBranch />, color: 'text-orange-500' },
+    { name: 'Git', icon: <DiGitBranch />, color: 'text-orange-500' },
     { name: 'MySQL', icon: <SiMysql />, color: 'text-blue-600' },
+    { name: 'Cloudflare', icon: <FaCloudflare />, color: 'text-yellow-600' },
+    { name: 'Postman', icon: <SiPostman />, color: 'text-orange-500' },
     { name: 'Java', icon: <DiJava />, color: 'text-red-700' },
   ]
 

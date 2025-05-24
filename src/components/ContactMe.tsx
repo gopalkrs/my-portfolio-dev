@@ -1,4 +1,4 @@
-import { Mail } from "lucide-react";
+import { File, Mail } from "lucide-react";
 import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
 const ContactMe = () => {
@@ -24,6 +24,11 @@ const ContactMe = () => {
             url: 'mailto:gopalkrsch@gmail.com',
             icon: <Mail className="w-5 h-5" />
         },
+        {
+            name: 'Resume',
+            url: 'https://drive.google.com/file/d/1zHrlaWLbDoA7eISu-C7XZwXiPrdLBKpn/view?usp=drivesdk',
+            icon: <File className="w-5 h-5" /> // Placeholder for resume icon
+        }
     ]
 
   return (
