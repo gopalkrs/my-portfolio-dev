@@ -32,7 +32,7 @@ const ContactMe = () => {
     ]
 
   return (
-    <div className="fixed z-500 bottom-5 flex flex-row items-center justify-center gap-10 mt-10 shadow-lg rounded-full p-4 bg-white">
+    <div className="fixed z-500 bottom-5 left-1/2 transform -translate-x-1/2 flex flex-row items-center justify-center gap-10 mt-10 shadow-lg rounded-full p-4 bg-white">
         {socialLinks.map((link, index) => (
             <a 
                 key={index} 

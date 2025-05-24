@@ -1,11 +1,13 @@
 import AboutMe from "../components/AboutMe"
 import ContactMe from "../components/ContactMe"
+import Experience from "../components/Experience"
 
 const Homepage = () => {
   return (
-    <section className="relative flex flex-col items-center justify-center h-screen bg-gray-100">
+    <section className="relative max-w-3xl mx-auto">
         <AboutMe />
         <ContactMe/>
+        <Experience />
     </section>
   )
 }
