@@ -1,54 +1,41 @@
-# React + TypeScript + Vite
+# 🌐 Portfolio Web Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, fully responsive personal portfolio website showcasing my projects, skills, and experience as a full-stack developer. Built with **React.js**, **TailwindCSS**, and **Framer Motion** for seamless animations and smooth user experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend Framework**: React.js, Vite
+- **Styling**: TailwindCSS
+- **Animations**: Framer Motion
+- **Deployment**: Cloudflare Pages
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🎯 Features
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- ✅ Clean & responsive UI for desktop, tablet, and mobile devices
+- ✅ Smooth animations and transitions powered by Framer Motion
+- ✅ Project showcase with live links and GitHub repositories
+- ✅ About Me, Skills, and Contact sections
+- ✅ SEO optimized for better discoverability
+- ✅ Easy scalability for adding more projects or sections
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🖥️ Live Demo
+
+**Deployed on Cloudflare 👉 
+https://gopal-edc.cloudflare.pages/
+
+---
+
+🎯 Why This Portfolio?
+Showcases my technical skills using modern web technologies.
+
+Demonstrates ability to create clean, professional UI/UX.
+
+Fully optimized for performance and SEO.
+
+Deployed & production-ready.
