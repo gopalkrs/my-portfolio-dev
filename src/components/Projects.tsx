@@ -51,15 +51,16 @@ const Projects = () => {
                     <div key={project.id} className="p-4 border-gray-800 border-1 rounded-lg">
                         <div className="flex flex-row items-center justify-between my-2">
                             <h3 className="text-lg font-semibold text-gray-200">{project.name}</h3>
-                            <a href={project.link} target="_blank" rel="noopener noreferrer" className="flex flex-row items-center gap-1 text-yellow-400 bg-gray-700 text-xs px-2 py-1 rounded-xl">
-                                Live 
-                                <Rocket className="w-3 h-3" /> 
-                            </a>
+                            
                         </div>
                         <p className="text-sm text-gray-300">{project.description}</p>
                         <hr className="border-t my-4 border-gray-700" />
                         <div className="mt-2 flex items-start gap-2">
-                            <a href={project.githublink} target="_blank" rel="noopener noreferrer" className="flex flex-row items-center gap-1 bg-yellow-600 hover:bg-yellow-700 text-white text-xs px-2 py-1 rounded">
+                            <a href={project.link} target="_blank" rel="noopener noreferrer" className="flex flex-row items-center gap-1 bg-orange-500 hover:bg-yellow-700 text-white text-xs px-2 py-1 rounded">
+                                Live 
+                                <Rocket className="w-3 h-3" /> 
+                            </a>
+                            <a href={project.githublink} target="_blank" rel="noopener noreferrer" className="flex flex-row items-center gap-1 text-orange-500 bg-gray-700 text-xs px-2 py-1 rounded">
                                 <FaGithub className="h-3 w-3" />
                                 Source
                             </a>
