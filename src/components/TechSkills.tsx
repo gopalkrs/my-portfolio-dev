@@ -2,11 +2,12 @@ import { CgVercel } from "react-icons/cg"
 import { DiGitBranch, DiJava, DiJavascript, DiMongodb, DiNodejs, } from "react-icons/di"
 import { FaReact } from "react-icons/fa6"
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri"
-import {  SiMysql, SiPostman, SiPrisma, SiSpringboot, SiTypescript } from "react-icons/si"
+import { SiMysql, SiPostman, SiPrisma, SiSpringboot, SiTypescript } from "react-icons/si";
+import { motion } from 'framer-motion';
 
 const TechSkills = () => {
 
-  const techStack=[
+  const techStack = [
     { name: 'JavaScript', icon: <DiJavascript />, color: 'text-yellow-500' },
     { name: 'Java', icon: <DiJava />, color: 'text-red-700' },
     { name: 'React', icon: <FaReact />, color: 'text-cyan-500' },
@@ -24,8 +25,16 @@ const TechSkills = () => {
   ]
 
   return (
-    <section className="mt-5 mx-auto w-[80%] md:max-w-3xl">
-      <h2 className="text-xl text-center font-bold mb-6 text-gray-200">Tech Skills</h2>
+    <motion.section
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      className="my-8 mx-auto w-[80%] md:max-w-3xl">
+      <div className="text-center my-5">
+        <h2 className="inline-block text-gray-200 font-bold text-2xl relative after:block after:h-1 after:mt-2 after:bg-blue-800 after:rounded-full after:shadow-md">
+          Tech <span className="text-blue-800">Skills</span>
+        </h2>
+      </div>
       <div className="flex flex-row flex-wrap justify-center items-center gap-2">
         {techStack.map((tech, index) => (
           <div key={index} className="flex items-center bg-gray-900 gap-1 py-1 px-2 rounded-lg shadow-lg">
@@ -35,7 +44,7 @@ const TechSkills = () => {
         ))}
       </div>
 
-    </section>
+    </motion.section>
   )
 }
 

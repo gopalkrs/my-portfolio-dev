@@ -40,8 +40,12 @@ const Projects = () => {
             initial={{opacity: 0, y: 50}}
             animate={{opacity: 1, y: 0}}
             transition={{duration: 1}}
-            className="my-5 mx-auto w-[80%] md:max-w-3xl">
-            <h2 className="text-xl text-center mb-6 text-gray-200 font-bold">Projects</h2>
+            className="my-8 mx-auto w-[80%] md:max-w-3xl">
+            <div className="text-center my-5">
+                <h2 className="inline-block text-gray-200 font-bold text-2xl relative after:block after:h-1 after:mt-2 after:bg-blue-800 after:rounded-full after:shadow-md">
+                    My <span className="text-blue-800">Projects</span>
+                </h2>
+            </div>
             <div className="flex flex-col gap-4">
                 {projectsList.map((project) => (
                     <div key={project.id} className="p-4 border-gray-800 border-1 rounded-lg">
