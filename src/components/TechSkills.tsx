@@ -2,7 +2,7 @@ import { CgVercel } from "react-icons/cg"
 import { DiGitBranch, DiJava, DiJavascript, DiMongodb, DiNodejs, } from "react-icons/di"
 import { FaReact } from "react-icons/fa6"
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri"
-import { SiDrizzle, SiMysql, SiPostman, SiPrisma, SiSpringboot, SiTypescript } from "react-icons/si";
+import { SiDrizzle, SiMysql, SiPostman, SiSpringboot, SiTypescript } from "react-icons/si";
 import { motion } from 'framer-motion';
 
 const TechSkills = () => {
