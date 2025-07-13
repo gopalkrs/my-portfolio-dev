@@ -2,7 +2,7 @@ import { CgVercel } from "react-icons/cg"
 import { DiGitBranch, DiJava, DiJavascript, DiMongodb, DiNodejs, } from "react-icons/di"
 import { FaReact } from "react-icons/fa6"
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri"
-import { SiMysql, SiPostman, SiPrisma, SiSpringboot, SiTypescript } from "react-icons/si";
+import { SiDrizzle, SiMysql, SiPostman, SiPrisma, SiSpringboot, SiTypescript } from "react-icons/si";
 import { motion } from 'framer-motion';
 
 const TechSkills = () => {
@@ -17,7 +17,7 @@ const TechSkills = () => {
     { name: 'Spring Boot', icon: <SiSpringboot />, color: 'text-green-700' },
     { name: 'Tailwind', icon: <RiTailwindCssFill />, color: 'text-blue-400' },
     { name: 'Nodejs', icon: <DiNodejs />, color: 'text-yellow-600' },
-    { name: 'Prisma', icon: <SiPrisma />, color: 'text-purple-600' },
+    { name: 'Drizzle', icon: <SiDrizzle />, color: 'text-green-600' },
     { name: 'Vercel', icon: <CgVercel />, color: 'text-black' },
     { name: 'Git', icon: <DiGitBranch />, color: 'text-orange-500' },
     { name: 'MySQL', icon: <SiMysql />, color: 'text-blue-600' },
