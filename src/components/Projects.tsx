@@ -1,5 +1,6 @@
-import { Link } from "lucide-react";
+import { Link, Rocket } from "lucide-react";
 import { FaGithub } from "react-icons/fa6";
+import {motion} from 'framer-motion';
 
 const Projects = () => {
 
@@ -10,8 +11,18 @@ const Projects = () => {
             image: '',
             description: 'Blogr is a clean, modern blogging app that lets users write, edit, and share posts with ease. Perfect for quick publishing and personal expression.',
             githublink: 'https://github.com/gopalkrs/blogr-app-backend',
-            techstack: ['Reactjs', 'Express', 'MongoDB', 'TipTap', 'Tailwind'],
+            techstack: ['Reactjs', 'Express', 'MongoDB', 'TipTap', 'Tailwind', 'Zustand', 'AWS S3 Bucket', 'Motion'],
             link: 'https://blogr-app-frontend.vercel.app/'
+        },
+        
+        {
+            id: 3,
+            name: 'Tiketex',
+            image: '',
+            description: 'An event management system that allows users to create, manage, and track events with ease. It features user authentication, event creation, and payment integration.',
+            githublink: 'https://github.com/gopalkrs/event-management-project',
+            techstack: ['Next.js', 'React', 'NextAuth', 'Tailwind', 'Tanstack Query', 'Drizzle', 'Razorpay', 'Cloudinary'],
+            link: 'https://tiketex.vercel.app/'
         },
         {
             id: 2,
@@ -22,44 +33,41 @@ const Projects = () => {
             techstack: ['Next.js','Prisma', 'PostgreSQL', 'Clerk', 'Zod', 'Tailwind',],
             link: 'https://debbit-app.vercel.app/'
         },
-        {
-            id: 3,
-            name: 'FilmaticDB',
-            image: '',
-            description: 'This is the first project.',
-            githublink: 'https://github.com/gopalkrs/movie-db-backend',
-            techstack: ['Reactjs', 'MongoDB', 'Express'],
-            link: 'https://filmaticdb.vercel.app/'
-        },
     ];
 
     return (
-        <section className="mt-5 mx-auto w-[80%] md:max-w-3xl">
-            <h2 className="text-xl text-center font-bold mb-6">Projects</h2>
+        <motion.section 
+            initial={{opacity: 0, y: 50}}
+            animate={{opacity: 1, y: 0}}
+            transition={{duration: 1}}
+            className="my-5 mx-auto w-[80%] md:max-w-3xl">
+            <h2 className="text-xl text-center mb-6 text-gray-200 font-bold">Projects</h2>
             <div className="flex flex-col gap-4">
                 {projectsList.map((project) => (
-                    <div key={project.id} className="p-4 bg-emerald-50 border-red-100 border-2 rounded-lg">
-                        <h3 className="text-lg font-semibold">{project.name}</h3>
-                        <p className="text-sm text-gray-600">{project.description}</p>
-                        <hr className="border-t my-4 border-gray-200" />
+                    <div key={project.id} className="p-4 border-gray-800 border-1 rounded-lg">
+                        <div className="flex flex-row items-center justify-between my-2">
+                            <h3 className="text-lg font-semibold text-gray-200">{project.name}</h3>
+                            <a href={project.link} target="_blank" rel="noopener noreferrer" className="flex flex-row items-center gap-1 text-yellow-400 bg-gray-700 text-xs px-2 py-1 rounded-xl">
+                                Live 
+                                <Rocket className="w-3 h-3" /> 
+                            </a>
+                        </div>
+                        <p className="text-sm text-gray-300">{project.description}</p>
+                        <hr className="border-t my-4 border-gray-700" />
                         <div className="mt-2 flex items-start gap-2">
-                            <a href={project.githublink} target="_blank" rel="noopener noreferrer" className="flex flex-row items-center gap-1 bg-blue-500 hover:bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                            <a href={project.githublink} target="_blank" rel="noopener noreferrer" className="flex flex-row items-center gap-1 bg-yellow-600 hover:bg-yellow-700 text-white text-xs px-2 py-1 rounded">
                                 <FaGithub className="h-3 w-3" />
                                 Source
                             </a>
-                            <a href={project.link} target="_blank" rel="noopener noreferrer" className="flex flex-row items-center gap-1 bg-blue-500 hover:bg-blue-600 text-white text-xs px-2 py-1 rounded">
-                                <Link className="h-3 w-3" />
-                                Website
-                            </a>
                         </div>
                         <div className="mt-2 flex items-center flex-wrap flex-row gap-2">{project.techstack.map((tech, index) => (
-                            <p className="bg-red-300 text-xs text-white px-2 py-1 rounded-xl" key={index}>{tech}</p>
+                            <p className="bg-gray-900 text-xs text-gray-400 px-2 py-1 rounded-xl" key={index}>{tech}</p>
                         ))}
                         </div>
                     </div>
                 ))}
             </div>
-        </section>
+        </motion.section>
     )
 }
 

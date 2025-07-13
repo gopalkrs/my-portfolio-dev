@@ -1,5 +1,7 @@
 import { File, Mail } from "lucide-react";
 import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import {motion} from 'framer-motion';
+
 
 const ContactMe = () => {
 
@@ -26,25 +28,31 @@ const ContactMe = () => {
         },
         {
             name: 'Resume',
-            url: 'https://drive.google.com/file/d/1zHrlaWLbDoA7eISu-C7XZwXiPrdLBKpn/view?usp=drivesdk',
+            url: 'https://drive.google.com/file/d/1tUZAaxtAeKRfGaP3nKg-MAdPnJA0W4xo/view?usp=drivesdk',
             icon: <File className="w-5 h-5" /> // Placeholder for resume icon
         }
     ]
 
   return (
-    <div className="fixed z-500 bottom-5 left-1/2 transform -translate-x-1/2 flex flex-row items-center justify-center gap-10 mt-10 shadow-lg rounded-full p-4 bg-white">
+    <motion.div 
+        
+        className="fixed z-500 bottom-5 left-1/2 transform -translate-x-1/2 flex flex-row items-center justify-center gap-10 mt-10 shadow-lg rounded-full p-4 bg-blue-800">
         {socialLinks.map((link, index) => (
-            <a 
+            <motion.a 
+                initial={{ opacity: 0, x: -10 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1, ease: "anticipate", delay: index * 0.1 }}
+                whileHover={{scale: 1.1, rotate: 10, transition: { duration: 0.2, delay: 0.1 } }}
                 key={index} 
                 href={link.url} 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="flex items-center gap-2 text-gray-600 hover:text-gray-800 transition-colors"
+                className="flex items-center gap-2 text-gray-300 hover:text-gray-400 transition-colors"
             >
                 {link.icon}
-            </a>
+            </motion.a>
         ))}
-    </div>
+    </motion.div>
   )
 }
 

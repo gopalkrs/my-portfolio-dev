@@ -5,11 +5,17 @@
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  background-color: #f0f0f0;
+  background-color: #000814;
   font-synthesis: none;
+  font-family: "Fira Sans", sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.font-libertinus {
+  font-family: "Libertinus Math", system-ui;
+  font-weight: 800;
 }
 
 
