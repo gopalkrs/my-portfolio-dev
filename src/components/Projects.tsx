@@ -1,4 +1,4 @@
-import { Link, Rocket } from "lucide-react";
+import { Rocket } from "lucide-react";
 import { FaGithub } from "react-icons/fa6";
 import {motion} from 'framer-motion';
 
