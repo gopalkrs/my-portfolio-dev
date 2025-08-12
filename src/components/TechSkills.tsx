@@ -18,7 +18,6 @@ const TechSkills = () => {
     { name: 'Tailwind', icon: <RiTailwindCssFill />, color: 'text-blue-400' },
     { name: 'Nodejs', icon: <DiNodejs />, color: 'text-yellow-600' },
     { name: 'Drizzle', icon: <SiDrizzle />, color: 'text-green-600' },
-    { name: 'Vercel', icon: <CgVercel />, color: 'text-black' },
     { name: 'Git', icon: <DiGitBranch />, color: 'text-orange-500' },
     { name: 'MySQL', icon: <SiMysql />, color: 'text-blue-600' },
     { name: 'Postman', icon: <SiPostman />, color: 'text-orange-500' },

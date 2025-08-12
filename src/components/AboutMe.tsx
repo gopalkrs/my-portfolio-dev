@@ -23,7 +23,7 @@ const AboutMe = () => {
           </div>
           <div className="flex flex-col items-start gap-2 mt-2">
             <p className="text-left text-gray-300 text-sm sm:text-md">
-              Hi, I'm <span className="text-gray-50 text-lg">Gopal👋</span>, a software engineer with a love for building interactive and scalable tech products and solving real world problems through code,
+              Hi, I'm <span className="text-gray-50 font-extrabold">Gopal👋</span>, a software developer with a love for building interactive and scalable tech products and solving real world problems through code,
               currently working as a software developer with 3+ years of experience in Reactjs, Java, Javascript, Nextjs and MySQL.
             </p>
           </div>
